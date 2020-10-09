@@ -7,22 +7,52 @@
 
 <meta name="Description" content="Opis Twojej strony dla wyszukiwarek" /> 
 
-<title>1</title> 
+<title>2</title> 
 
 </head> 
 
 <body>
 
-<iframe src="http://ebd.cda.pl/620x368/16998484" width="77.9%" height="77.9%" style="border:none;" scrolling="no" allowfullscreen name="v2" allow="encrypted-media"></iframe>
+<iframe 
+	src="http://ebd.cda.pl/620x368/16998484" 
+	width="77.9%" 
+	height="77.9%" 
+	style="border:none;" 
+	scrolling="no" 
+	allowfullscreen name="v2" 
+	allow="encrypted-media"
+	align="left"
+></iframe>
 
-<iframe frameborder="0"
-        scrolling="no"
-        id="chat_embed"
-        src="https://www.twitch.tv/embed/drkiller002/chat?parent=nitruseq.github.io"
-        height="500"
-        width="350">
-</iframe>
+<iframe 
+	frameborder="0"
+	scrolling="no"
+	id="chat_embed"
+	src="https://www.twitch.tv/embed/drkiller002/chat?parent=nitruseq.github.io"
+	height="77.9%"
+	width="350"
+	align="right"
+></iframe>
 
 </body> 
+
+  <body>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "drkiller002",
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        parent: ["nitruseq.github.io"]
+      });
+    </script>
+  </body>
 
 </html>
