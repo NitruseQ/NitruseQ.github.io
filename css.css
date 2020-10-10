@@ -16,8 +16,9 @@
 
 #film {
 	position:fixed;
-	width: 104.9%;
-	height: 104.9%;
+	width: calc(100% - 350px);
+	height: 75%;
 	left:0%;
-	bottom:-26.5%;
+	bottom:0%;
 }
+
