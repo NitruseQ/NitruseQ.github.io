@@ -1,7 +1,23 @@
-div#twitch-embed {
-	position: relative;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
+#twitch-embed {
+	position:fixed;
+	width: 25%;
+	height: 25%;
+	left:0%;
+	top:0%;
+}
+
+#chat {
+	position:fixed;
+	width: 350px;
+	height: 100%;
+	right:0%;
+	top:0%;
+}
+
+#film {
+	position:fixed;
+	width: 104.9%;
+	height: 104.9%;
+	left:0%;
+	bottom:-26.5%;
 }

@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl"> 
 
 <head> 
@@ -10,6 +10,8 @@
 <title>1</title> 
 <link rel="stylesheet" type="text/css" href="css.css">
 </head> 
+
+<div id="chat">
 <iframe 
 	frameborder="0"
 	scrolling="no"
@@ -19,9 +21,23 @@
 	width="350"
 	align="right"
 ></iframe>
+</div>
 
   <body>
   
+<div id="film">
+<iframe 
+	src="http://ebd.cda.pl/620x368/16998484" 
+	width="75%" 
+	height="75%" 
+	style="border:none;" 
+	scrolling="no" 
+	allowfullscreen name="v2" 
+	allow="encrypted-media"
+
+></iframe>
+</div>
+
     <!-- Add a placeholder for the Twitch embed -->
     <div id="twitch-embed" ></div>
 
@@ -31,29 +47,15 @@
     <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
     <script type="text/javascript">
       new Twitch.Embed("twitch-embed", {
-        width: "25%",
-        height: "25%",
+        width: "100%",
+        height: "100%",
 		layout: "video",
-		align: "right",
         channel: "drkiller002",
         // only needed if your site is also embedded on embed.example.com and othersite.example.com 
         parent: ["nitruseq.github.io"]
       });
     </script>
 
-
-
-
-<iframe 
-	src="http://ebd.cda.pl/620x368/16998484" 
-	width="75%" 
-	height="75%" 
-	style="border:none;" 
-	scrolling="no" 
-	allowfullscreen name="v2" 
-	allow="encrypted-media"
-	align="left"
-></iframe>
 
 
 </body> 
