@@ -1,3 +1,8 @@
+@font-face {
+		src: url(fonts/Roobert-Regular.otf);
+		font-family: Roobert;
+}
+
 #twitch-embed {
 	position:fixed;
 	width: 25%;
@@ -25,5 +30,5 @@
 #text {
 	position:fixed;
 	right:353px;
-	top: calc(25% - 37px);
+	top: calc(25% - 35px);
 }
