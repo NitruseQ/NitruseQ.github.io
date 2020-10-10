@@ -2,7 +2,7 @@
 	position:fixed;
 	width: 25%;
 	height: 25%;
-	left:0%;
+	left: calc(((100% - 350px) * 0.5) - 12.5%);
 	top:0%;
 }
 
