@@ -9,20 +9,18 @@
 
 <link rel="shortcut icon" type="image/png" href="icon.png">
 
-<title>erte</title> 
+<title>WideHardo</title> 
+
 <link rel="stylesheet" type="text/css" href="css.css">
+
 </head> 
 
-
-
-  <body style="background-color:#0e0e10">
+<body style="background-color:#0e0e10">
 
 <div id="text">
-
       <p style="color:#313134; font-family:Roobert">
          by <a style="color:#313134; text-decoration:none" href="https://www.twitch.tv/nitruseq" target="_blank"><b>nitruseq</b></a>
       </p>
-
 </div>
 
 <div id="film">
@@ -34,10 +32,9 @@
 	scrolling="no" 
 	allowfullscreen name="v2" 
 	allow="encrypted-media"
-
 ></iframe>
-
 </div>
+
 <div id="chat">
 <iframe 
 	frameborder="0"
@@ -50,26 +47,19 @@
 	align="right"
 ></iframe>
 </div>
-    <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed" ></div>
 
-    <!-- Load the Twitch embed script -->
+    <div id="twitch-embed"></div>
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
     <script type="text/javascript">
       new Twitch.Embed("twitch-embed", {
         width: "100%",
         height: "100%",
 		layout: "video",
         channel: "drkiller002",
-        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
         parent: ["nitruseq.github.io"]
       });
     </script>
 
-
-
-</body> 
+</body>
 
 </html>
