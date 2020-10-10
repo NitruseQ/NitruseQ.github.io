@@ -3,12 +3,12 @@
 		font-family: Roobert;
 }
 
-#twitch-embed {
+#lektor {
 	position:fixed;
 	width: 25%;
 	height: 25%;
-	left: 0%;
-	top:0%;
+	left: calc(50% - 175px);
+	top: 50%;
 }
 
 #chat {
@@ -19,12 +19,12 @@
 	top:0%;
 }
 
-#film {
+#napisy {
 	position:fixed;
-	width: calc(100% - 350px);
-	height: 100%;
-	left:0%;
-	bottom:0%;
+	width: 25%;
+	height: 25%;
+	left: calc(50% - 175px);
+	top: 55%;
 }
 
 #text {
