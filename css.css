@@ -22,3 +22,8 @@
 	bottom:0%;
 }
 
+#text {
+	position:fixed;
+	right:353px;
+	top: calc(25% - 37px);
+}
