@@ -5,8 +5,8 @@
 
 #lektor {
 	position:fixed;
-	width: 25%;
-	height: 25%;
+	width: 70px;
+	height: 17px;
 	left: calc(50% - 175px);
 	top: 50%;
 }
@@ -21,8 +21,8 @@
 
 #napisy {
 	position:fixed;
-	width: 25%;
-	height: 25%;
+	width: 70px;
+	height: 17px;
 	left: calc(50% - 175px);
 	top: 55%;
 }
@@ -30,5 +30,5 @@
 #text {
 	position:fixed;
 	right:353px;
-	top: -1.5%; /*calc(25% - 35px);*/
+	top: -1.5%;
 }
