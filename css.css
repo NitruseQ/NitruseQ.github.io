@@ -7,7 +7,7 @@
 	position:fixed;
 	width: 25%;
 	height: 25%;
-	left: calc(((100% - 350px) * 0.5) - 12.5%);
+	left: 0%; /*calc(((100% - 350px) * 0.5) - 12.5%);*/
 	top:0%;
 }
 
@@ -22,7 +22,7 @@
 #film {
 	position:fixed;
 	width: calc(100% - 350px);
-	height: 75%;
+	height: 100%;
 	left:0%;
 	bottom:0%;
 }
@@ -30,5 +30,5 @@
 #text {
 	position:fixed;
 	right:353px;
-	top: calc(25% - 35px);
+	top: -1.5%; /*calc(25% - 35px);*/
 }
