@@ -7,8 +7,8 @@
 	position:fixed;
 	width: 70px;
 	height: 17px;
-	left: calc(50% - 175px);
-	top: 50%;
+	left: calc(50% - 211px);
+	bottom: calc(50% + 10px);
 }
 
 #chat {
@@ -21,10 +21,10 @@
 
 #napisy {
 	position:fixed;
-	width: 70px;
+	width: 65px;
 	height: 17px;
-	left: calc(50% - 175px);
-	top: 55%;
+	left: calc(50% - 209px);
+	top: calc(50% + 10px);
 }
 
 #text {
