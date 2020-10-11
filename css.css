@@ -40,3 +40,36 @@
 	left: 0%;
 	top: 0%;
 }
+
+#peepoglad {
+	position:fixed;
+	width: 112px;
+	height: 112px;
+	left: 0%;
+	bottom: -17px;
+}
+
+#feelsokayman {
+	position:fixed;
+	width: 112px;
+	height: 112px;
+	right: 350px;
+	bottom: 0px;
+}
+
+#nymncorn {
+	position:fixed;
+	width: 112px;
+	height: 112px;
+	right: calc(105px + 350px);
+	bottom: 0px;
+}
+
+#teatime {
+	position:fixed;
+	width: 112px;
+	height: 112px;
+	left: 105px;
+	bottom: 0px;
+}
+
