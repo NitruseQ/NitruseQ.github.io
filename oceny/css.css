@@ -1,0 +1,66 @@
+@font-face {
+		src: url(fonts/Roobert-Regular.otf);
+		font-family: Roobert;
+}
+
+#chat {
+	position:fixed;
+	width: 350px;
+	height: 100%;
+	right:0%;
+	top:0%;
+}
+
+#twitch-embed {
+	position:fixed;
+	width: 25%;
+	height: 25%;
+	right: 350px;
+	bottom: 0px;
+}
+
+#text {
+	position:fixed;
+	right:353px;
+	top: -1.5%;
+}
+
+#feelsokayman {
+	position:fixed;
+	width: 112px;
+	height: 112px;
+	right: 350px;
+	bottom: 25%;
+}
+
+#nymncorn {
+	position:fixed;
+	width: 112px;
+	height: 112px;
+	right: calc(105px + 350px);
+	bottom: 25%;
+}
+
+#sp1 {
+	position: relative;
+	left: -10px;
+	top: -10px;
+}
+
+#sp2 {
+	position: relative;
+	left: -10px;
+	top: -15px;
+}
+
+#sp3 {
+	position: relative;
+	left: -10px;
+	top: -20px;
+}
+
+#sp4 {
+	position: relative;
+	left: -10px;
+	top: -25px;
+}
