@@ -19,12 +19,13 @@
 	top:0%;
 }
 
-#napisy {
-	position:fixed;
-	width: 65px;
-	height: 17px;
-	left: calc(50% - 209px);
-	top: calc(50% + 10px);
+.container {
+	position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: calc(100% - 350px);
 }
 
 #text {
