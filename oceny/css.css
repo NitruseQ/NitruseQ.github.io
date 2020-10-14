@@ -40,3 +40,8 @@
 	right: calc(105px + 350px);
 	bottom: 25%;
 }
+
+.sp1 {
+	position: relative;
+	width: calc(100% - 350px);
+}
