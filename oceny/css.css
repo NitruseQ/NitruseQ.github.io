@@ -6,17 +6,17 @@
 #chat {
 	position:fixed;
 	width: 350px;
-	height: 100%;
-	right:0%;
-	top:0%;
+	height: calc(100% - 197px);
+	right:0px;
+	top:197px;
 }
 
 #twitch-embed {
 	position:fixed;
-	width: 25%;
-	height: 25%;
-	right: 350px;
-	bottom: 0px;
+	width: 350px;
+	height: 197px;
+	right: 0px;
+	top: 0px;
 }
 
 #text {
@@ -29,19 +29,29 @@
 	position:fixed;
 	width: 112px;
 	height: 112px;
-	right: 350px;
-	bottom: 25%;
+	right: 336px;
+	bottom: -14px;
 }
 
 #nymncorn {
 	position:fixed;
 	width: 112px;
 	height: 112px;
-	right: calc(105px + 350px);
-	bottom: 25%;
+	right: 415px;
+	bottom: -14px;
 }
 
 .sp1 {
 	position: relative;
-	width: calc(100% - 350px);
+	width: calc((100% - 350px) * (4 / 3));
+	left: 0px;
+	top: 0px;
+        -ms-zoom: 0.75;
+        -moz-transform: scale(0.75);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.75);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.75);
+        -webkit-transform-origin: 0 0;
 }
+
