@@ -60,6 +60,16 @@
       </p>
 </div>
 
+    <script>
+        var test = document.getElementByClassName("tw-c-text-overlay tw-font-size-5");
+        
+
+        console.log(test);//HTMLCollection[1]
+
+        var testTarget=document.getElementsByClassName("tw-c-text-overlay tw-font-size-5")[0];//here , this element is target
+        console.log(testTarget);//<p class="test">hello word2</p>
+    </script>
+
 </body>
 
 </html>
