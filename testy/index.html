@@ -66,11 +66,11 @@
 </div>
 
 <script>
-var iframe = document.getElementById('chat_embed')[0];
-console.log('chat embed = ' + iframe);
-var iframe = document.getElementById('twitchskrypt')[0];
-console.log('twitchskrypt = ' + iframe);
-console.log('Twitch.Embed = ' + Twitch.Embed);
+
+var iframe = document.getElementById('twitchskrypt');
+var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+console.log(innerDoc);
+
 </script>
 
 </body>
