@@ -30,10 +30,7 @@
 ></iframe>
 </div>
 
-<script>
-var iframe = document.getElementById('chat_embed');
-console.log(iframe);
-</script>
+
 
 <div id="chat">
 <iframe 
@@ -48,9 +45,11 @@ console.log(iframe);
 ></iframe>
 </div>
 
+
+
     <div id="twitch-embed"></div>
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" id="twitchskrypt">
       new Twitch.Embed("twitch-embed", {
         width: "100%",
         height: "100%",
@@ -65,6 +64,14 @@ console.log(iframe);
          by <a style="color:#313134; text-decoration:none" href="https://www.twitch.tv/nitruseq" target="_blank"><b>nitruseq</b></a>
       </p>
 </div>
+
+<script>
+var iframe = document.getElementById('chat_embed');
+console.log('chat embed = ' + iframe);
+var iframe = document.getElementById('twitchskrypt');
+console.log('twitchskrypt = ' + iframe);
+console.log('Twitch.Embed = ' + Twitch.Embed);
+</script>
 
 </body>
 
