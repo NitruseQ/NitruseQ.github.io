@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl"> 
+
+<script>
+
+var czy_yt = "0";
+var id_filmu = "5977301e5";
+
+//                                  INSTRUKCJA
+// 1. Jeżeli film pochodzi z cda - "czy_yt" = 0, a gdy z youtube'a - "czy_yt" = 1
+// 2. Skopiuj id filmu i wklej do "id_filmu"
+
+</script>
+
+<head> 
+
+<meta http-equiv="Content-Type" content="text/html; charset="iso-8859-2" />
+
+<link rel="shortcut icon" type="image/png" href="icon.png">
+
+<title>Film z lektorem B)</title> 
+
+<link rel="stylesheet" type="text/css" href="css.css">
+
+</head> 
+
+<body style="background-color:#0e0e10">
+
+<div id="film">
+<iframe 
+	src=""
+	id="filmframe"
+	width="100%" 
+	height="100%" 
+	style="border:none;" 
+	scrolling="no" 
+	allowfullscreen name="v2" 
+	allow="encrypted-media"
+></iframe>
+</div>
+
+<script>
+if (czy_yt == "0") 
+{
+document.getElementById('filmframe').src = 'https://ebd.cda.pl/620x368/' + id_filmu;
+}
+if (czy_yt == "1")
+{
+document.getElementById('filmframe').src = 'https://www.youtube.com/embed/' + id_filmu;
+}
+</script>
+
+<div id="chat">
+<iframe 
+	frameborder="0"
+	theme="dark"
+	scrolling="no"
+	id="chat_embed"
+	src="https://www.twitch.tv/embed/drkiller002/chat?darkpopout&parent=nitruseq.github.io"
+	height="100%"
+	width="350"
+	align="right"
+></iframe>
+</div>
+
+	<iframe id="twitch-embed"
+	src="https://player.twitch.tv/?channel=drkiller002&muted=true%22&parent=nitruseq.github.io"
+    height="100%"
+	width="100%"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen="yes">
+</iframe>
+
+<script>
+document.getElementById('twitch-embed').width = 50%;
+document.getElementById('twitch-embed').height = 50%;
+</script>
+
+<div id="text">
+      <p style="color:#313134; font-family:Roobert; font-size:14px">
+         by <a style="color:#313134; text-decoration:none" href="https://www.twitch.tv/nitruseq" target="_blank"><b>nitruseq</b></a>
+      </p>
+</div>
+
+</body>
+
+</html>
