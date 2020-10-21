@@ -9,6 +9,24 @@
 	top: 50%;
 }
 
+#suwak2 {
+	position: fixed;
+	left: 50%;
+	top: 55%;
+}
+
+#switch {
+	position: fixed;
+	left: 50%;
+	top: 60%;
+}
+
+#switch2 {
+	position: fixed;
+	left: 50%;
+	top: 45%;
+}
+
 #twitch-embed {
 	position:fixed;
 	width: 25%;

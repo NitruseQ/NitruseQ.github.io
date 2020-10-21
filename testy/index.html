@@ -5,7 +5,6 @@
 
 var czy_yt = "0";
 var id_filmu = "5977301e5";
-var zmienna = "25";
 
 //                                  INSTRUKCJA
 // 1. Jeżeli film pochodzi z cda - "czy_yt" = 0, a gdy z youtube'a - "czy_yt" = 1
@@ -14,6 +13,8 @@ var zmienna = "25";
 </script>
 
 <head> 
+
+<script src="js.js"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset="iso-8859-2" />
 
@@ -73,19 +74,20 @@ document.getElementById('filmframe').src = 'https://www.youtube.com/embed/' + id
     allowfullscreen="yes">
 </iframe>
 
-<script>
+<input type="checkbox" id="switch2" onclick="klik2()">
 
-function rozmiar() {
-var suwak = document.getElementById('suwak');
-rozmiar=suwak.value;
-document.getElementById('twitch-embed').style.width = rozmiar + "%";
-document.getElementById('twitch-embed').style.height = rozmiar + "%";
+<input value="25" type="range" oninput="rozmiar(this.value)" id="suwak" min="0" max="100" step="1" style="display:none"/>
 
+<input value="350" type="range" oninput="czat(this.value)" id="suwak2" min="250" max="450" step="1" style="display:none"/>
+
+<input type="checkbox" id="switch" onclick="klik()" checked="true" style="display:none">
+
+<script>        
+function displayWindowSize(){
+    czat(document.getElementById("suwak2").value);
 }
-
+window.addEventListener("resize", displayWindowSize);
 </script>
-
-<input value="25" type="range" oninput="rozmiar()" id="suwak" min="0" max="50" step="1" />
 
 <div id="text">
       <p style="color:#313134; font-family:Roobert; font-size:14px">
