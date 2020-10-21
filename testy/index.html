@@ -5,6 +5,7 @@
 
 var czy_yt = "0";
 var id_filmu = "5977301e5";
+var zmienna = "25";
 
 //                                  INSTRUKCJA
 // 1. Jeżeli film pochodzi z cda - "czy_yt" = 0, a gdy z youtube'a - "czy_yt" = 1
@@ -73,9 +74,18 @@ document.getElementById('filmframe').src = 'https://www.youtube.com/embed/' + id
 </iframe>
 
 <script>
-document.getElementById('twitch-embed').width = 50%;
-document.getElementById('twitch-embed').height = 50%;
+
+function rozmiar() {
+var suwak = document.getElementById('suwak');
+rozmiar=suwak.value;
+document.getElementById('twitch-embed').style.width = rozmiar + "%";
+document.getElementById('twitch-embed').style.height = rozmiar + "%";
+
+}
+
 </script>
+
+<input value="25" type="range" oninput="rozmiar()" id="suwak" min="0" max="50" step="1" />
 
 <div id="text">
       <p style="color:#313134; font-family:Roobert; font-size:14px">

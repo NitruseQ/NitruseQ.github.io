@@ -3,6 +3,12 @@
 		font-family: Roobert;
 }
 
+#suwak {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+}
+
 #twitch-embed {
 	position:fixed;
 	width: 25%;
