@@ -8,6 +8,7 @@ document.getElementById('chat_embed').style.width = value + "px";
 szerokosc = window.innerWidth;
 szerokosc2 = szerokosc - value;
 document.getElementById('filmframe').style.width = szerokosc2 + "px";
+document.getElementById('text').style.left = szerokosc2 + "px";
 }
 
 function klik() {
