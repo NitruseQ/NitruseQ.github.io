@@ -14,8 +14,6 @@ var id_filmu = "5977301e5";
 
 <head> 
 
-<script src="js.js"></script>
-
 <meta http-equiv="Content-Type" content="text/html; charset="iso-8859-2" />
 
 <link rel="shortcut icon" type="image/png" href="icon.png">
@@ -65,50 +63,23 @@ document.getElementById('filmframe').src = 'https://www.youtube.com/embed/' + id
 ></iframe>
 </div>
 
-	<iframe id="twitch-embed"
-	src="https://player.twitch.tv/?channel=drkiller002&muted=true%22&parent=nitruseq.github.io"
-    height="100%"
-	width="100%"
-    frameborder="0"
-    scrolling="no"
-    allowfullscreen="yes">
-</iframe>
+    <div id="twitch-embed"></div>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: "100%",
+		layout: "video",
+        channel: "drkiller002",
+        parent: ["nitruseq.github.io"]
+      });
+    </script>
 
-<div id="text" height="17">
-      <p style="white-space: nowrap; color:#313134; font-family:Roobert; font-size:14px">
+<div id="text">
+      <p style="color:#313134; font-family:Roobert; font-size:14px">
          by <a style="color:#313134; text-decoration:none" href="https://www.twitch.tv/nitruseq" target="_blank"><b>nitruseq</b></a>
       </p>
 </div>
-
-<p id="ukryjstream" style="white-space: nowrap;display:none;color:white;font-family:Roobert;font-size:14px">Ukryj stream</p>
-
-<p id="opcje" style="color:#808080;font-family:Roobert;font-size:14px">Opcje</p>
-
-<div id="tlo" style="display:none">
-<div id="textstrim" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">
-rozmiar strima
-</div>
-<div id="textczat" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">
-rozmiar czatu
-</div>
-</div>
-
-<input type="checkbox" id="switch2" onclick="klik2()">
-
-<input value="25" type="range" oninput="rozmiar(this.value)" id="suwak" min="0" max="100" step="1" style="display:none"/>
-
-<input value="350" type="range" oninput="czat(this.value)" id="suwak2" min="0" max="700" step="1" style="display:none"/>
-
-<input type="checkbox" id="switch" onclick="klik()" style="display:none">
-
-<script>        
-function displayWindowSize(){
-    czat(document.getElementById("suwak2").value);
-}
-window.addEventListener("resize", displayWindowSize);
-</script>
-
-
 
 </body>
 
