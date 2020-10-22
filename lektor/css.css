@@ -12,6 +12,12 @@
 	left: calc(50% - 238px - 30px);
 }
 
+#zmiana {
+	position: fixed;
+	top: 0px;
+	right: 580px;
+}
+
 #ukryjstream {
 	position: fixed;
 	right: 496px;
