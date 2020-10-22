@@ -5,26 +5,26 @@
 
 #suwak {
 	position: fixed;
-	left: 50%;
-	top: 50%;
+	left: calc(50% - 50px);
+	top: calc(50% - 15px);
 }
 
 #suwak2 {
 	position: fixed;
-	left: 50%;
-	top: 55%;
+	left: calc(50% - 50px);
+	top: calc(50% + 15px);
 }
 
 #switch {
 	position: fixed;
-	left: 50%;
-	top: 60%;
+	right: 350px;
+	top: 20px;
 }
 
 #switch2 {
 	position: fixed;
-	left: 50%;
-	top: 45%;
+	right: 422px;
+	top: -1px;
 }
 
 #twitch-embed {

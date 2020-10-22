@@ -7,8 +7,13 @@ function czat(value) {
 document.getElementById('chat_embed').style.width = value + "px";
 szerokosc = window.innerWidth;
 szerokosc2 = szerokosc - value;
+szerokosc3 = szerokosc2 - 73;
+szerokosc4 = szerokosc2 - 92;
+szerokosc5 = szerokosc2 - 20;
 document.getElementById('filmframe').style.width = szerokosc2 + "px";
-document.getElementById('text').style.left = szerokosc2 + "px";
+document.getElementById('text').style.left = szerokosc3 + "px";
+document.getElementById('switch').style.left = szerokosc5 + "px";
+document.getElementById('switch2').style.left = szerokosc4 + "px";
 }
 
 function klik() {
