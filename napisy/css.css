@@ -3,6 +3,72 @@
 		font-family: Roobert;
 }
 
+#tlo {
+	position: fixed;
+	background-color: #313134;
+	height: 71px;
+	width: 189px;
+	top: calc(50% - 43px - 15px);
+	left: calc(50% - 238px - 30px);
+}
+
+#zmiana {
+	position: fixed;
+	top: 0px;
+	right: 580px;
+}
+
+#ukryjstream {
+	position: fixed;
+	right: 496px;
+	top: -15px;
+	height: 17px;
+}
+
+#opcje {
+	position: fixed;
+	right: 440px;
+	top: -15px;
+}
+
+#textstrim {
+    position:absolute;
+    width:100%;
+    top:0px;
+    text-align:center;
+}
+
+#textczat {
+    position:absolute;
+    width:100%;
+    bottom:2px;
+    text-align:center;
+}
+
+#suwak {
+	position: fixed;
+	left: calc(50% - 240px);
+	top: calc(50% - 10px - 30px);
+}
+
+#suwak2 {
+	position: fixed;
+	left: calc(50% - 240px);
+	top: calc(50% + 10px - 30px);
+}
+
+#switch {
+	position: fixed;
+	right: 478px;
+	top: -1px;
+}
+
+#switch2 {
+	position: fixed;
+	right: 422px;
+	top: -1px;
+}
+
 #twitch-embed {
 	position:fixed;
 	width: 25%;
@@ -30,5 +96,5 @@
 #text {
 	position:fixed;
 	right:353px;
-	top: -1.5%; /*calc(25% - 35px);*/
+	top: -15px;
 }
