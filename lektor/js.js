@@ -53,7 +53,7 @@ function klik2() {
 }
 
 function zmiana() {
-	var zrodlo = prompt('Wybierz źródło filmu, wpisz:\n"cda", bądź "youtube"');
+	var zrodlo = prompt('wybierz źródło filmu, wpisz:\n"cda", bądź "youtube"\n*zmiana nastąpi tylko u Ciebie, u nikogo innego');
 	if (zrodlo == "cda") {
 		var id = prompt("wybrane źródło: " + zrodlo + "\nwprowadź id filmu\nzostaw pole puste, aby anulować");
 		if ((id == "") || (id == null)) {
