@@ -99,7 +99,13 @@ rozmiar czatu
 
 <input value="25" type="range" oninput="rozmiar(this.value)" id="suwak" min="0" max="100" step="1" style="display:none"/>
 
-<input value="350" type="range" oninput="czat(this.value)" id="suwak2" min="0" max="700" step="1" style="display:none"/>
+<input value="350" type="range" oninput="czat(this.value)" id="suwak2" min="0" max="500" step="1" style="display:none"/>
+
+<script>
+var w = window.innerWidth;
+w2 = w / 2;
+document.getElementById('suwak2').max = w2;
+</script>
 
 <input type="checkbox" id="switch" onclick="klik()" style="display:none">
 
