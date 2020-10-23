@@ -4,7 +4,7 @@ document.getElementById('twitch-embed').style.height = value + "%";
 }
 
 function czat(value) {
-document.getElementById('chat_embed').style.width = value + "px";
+document.getElementById('chat').style.width = value + "px";
 szerokosc = window.innerWidth;
 szerokosc2 = szerokosc - value;
 szerokosc3 = szerokosc2 - 73;
