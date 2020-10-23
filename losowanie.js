@@ -1,4 +1,4 @@
-liczba = Math.floor(Math.random() * 5);
+liczba = Math.floor(Math.random() * 6);
 if (liczba == 0) {
 	document.getElementById('tlo1').src = "1.gif";
 }
@@ -17,4 +17,8 @@ if (liczba == 3) {
 
 if (liczba == 4) {
 	document.getElementById('tlo1').src = "5.png";
+}
+
+if (liczba == 5) {
+	document.getElementById('tlo1').src = "6.png";
 }
