@@ -4,7 +4,7 @@
 <script>
 
 var czy_yt = "0";
-var id_filmu = "nvcxs5";
+var id_filmu = "599656789";
 
 //                                  INSTRUKCJA
 // 1. Jeżeli film pochodzi z cda - "czy_yt" = 0, a gdy z youtube'a - "czy_yt" = 1
@@ -44,7 +44,7 @@ var id_filmu = "nvcxs5";
 <script>
 if (czy_yt == "0") 
 {
-document.getElementById('filmframe').src = 'https://vider.info/embed/video/' + id_filmu;
+document.getElementById('filmframe').src = 'https://ebd.cda.pl/620x368/' + id_filmu;
 }
 if (czy_yt == "1")
 {
@@ -65,7 +65,7 @@ document.getElementById('filmframe').src = 'https://www.youtube.com/embed/' + id
 ></iframe>
 </div>
 
-	<iframe id="twitch-embed"
+<iframe id="twitch-embed"
 	src="https://player.twitch.tv/?channel=drkiller002&muted=true%22&parent=nitruseq.github.io"
     height="100%"
 	width="100%"
@@ -88,10 +88,13 @@ document.getElementById('filmframe').src = 'https://www.youtube.com/embed/' + id
 
 <div id="tlo" style="display:none">
 <div id="textstrim" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">
-rozmiar strima
+rozmiar streama
 </div>
 <div id="textczat" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">
 rozmiar czatu
+</div>
+<div id="textgora" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">
+odległość filmu od góry
 </div>
 </div>
 
@@ -100,6 +103,8 @@ rozmiar czatu
 <input value="25" type="range" oninput="rozmiar(this.value)" id="suwak" min="0" max="100" step="1" style="display:none"/>
 
 <input value="350" type="range" oninput="czat(this.value)" id="suwak2" min="0" max="700" step="1" style="display:none"/>
+
+<input value="0" type="range" oninput="gora(this.value)" id="suwak3" min="0" max="300" step="1" style="display:none"/>
 
 <script>
 var w = window.innerWidth;
@@ -110,6 +115,15 @@ document.getElementById('suwak2').max = "500";
 if (w2 > 500) {
 document.getElementById('suwak2').max = w2;
 }
+var h = window.innerHeight;
+h2 = h / 3;
+if (h2 <= 300) {
+document.getElementById('suwak3').max = "300";
+}
+if (h2 > 300) {
+document.getElementById('suwak3').max = h2;
+}
+
 </script>
 
 <input type="checkbox" id="switch" onclick="klik()" style="display:none">
@@ -117,6 +131,7 @@ document.getElementById('suwak2').max = w2;
 <script>        
 function displayWindowSize(){
     czat(document.getElementById("suwak2").value);
+	gora(document.getElementById("suwak3").value);
 }
 window.addEventListener("resize", displayWindowSize);
 </script>
