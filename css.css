@@ -3,14 +3,6 @@
 		font-family: Roobert;
 }
 
-#lektor {
-	position:fixed;
-	width: 70px;
-	height: 17px;
-	left: calc(50% - 211px);
-	bottom: calc(50% + 10px);
-}
-
 #chat {
 	position:fixed;
 	width: 350px;
