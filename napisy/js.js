@@ -36,6 +36,7 @@ function klik2() {
   if (checkBox2.checked == true){
     document.getElementById('suwak').style.display = "block";
 	document.getElementById('suwak2').style.display = "block";
+	document.getElementById('suwak3').style.display = "block";
 	document.getElementById('switch').style.display = "block";
 	document.getElementById('tlo').style.display = "block";
 	document.getElementById('ukryjstream').style.display = "block";
@@ -44,6 +45,7 @@ function klik2() {
   } else {
     document.getElementById('suwak').style.display = "none";
 	document.getElementById('suwak2').style.display = "none";
+	document.getElementById('suwak3').style.display = "none";
 	document.getElementById('switch').style.display = "none";
 	document.getElementById('tlo').style.display = "none";
 	document.getElementById('ukryjstream').style.display = "none";
@@ -96,29 +98,8 @@ function zmiana() {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function gora(value) {
+	wysokosc = window.innerHeight;
+	wysokosc2 = wysokosc - value;
+	document.getElementById('filmframe').style.height = wysokosc2 + "px";
+}

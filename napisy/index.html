@@ -1,85 +1,34 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl"> 
+<head>
 
-<script>
-
-var czy_yt = "0";
-var id_filmu = "431262281";
-
-//                                  INSTRUKCJA
-// 1. Jeżeli film pochodzi z cda - "czy_yt" = 0, a gdy z youtube'a - "czy_yt" = 1
-// 2. Skopiuj id filmu i wklej do "id_filmu"
-
-</script>
-
-<head> 
+<script src="jaki_film.js"></script>
 
 <script src="js.js"></script>
 
-<meta http-equiv="Content-Type" content="text/html; charset="iso-8859-2" />
-
 <link rel="shortcut icon" type="image/png" href="icon.png">
 
-<title>Film z lektorem B)</title> 
+<title>DRKiller 😎</title> 
 
 <link rel="stylesheet" type="text/css" href="css.css">
-
 </head> 
 
 <body style="background-color:#0e0e10">
-
 <div id="film">
-<iframe 
-	src=""
-	id="filmframe"
-	width="100%" 
-	height="100%" 
-	style="border:none;" 
-	scrolling="no" 
-	allowfullscreen name="v2" 
-	allow="encrypted-media"
-></iframe>
+	<iframe src="" id="filmframe" width="100%" height="100%" style="border:none;" scrolling="no" allowfullscreen name="v2" allow="encrypted-media"></iframe>
 </div>
 
-<script>
-if (czy_yt == "0") 
-{
-document.getElementById('filmframe').src = 'https://ebd.cda.pl/620x368/' + id_filmu;
-}
-if (czy_yt == "1")
-{
-document.getElementById('filmframe').src = 'https://www.youtube.com/embed/' + id_filmu;
-}
-</script>
+<script src="ustawienie_filmu.js"></script>
 
 <div id="chat">
-<iframe 
-	frameborder="0"
-	theme="dark"
-	scrolling="no"
-	id="chat_embed"
-	src="https://www.twitch.tv/embed/drkiller002/chat?darkpopout&parent=nitruseq.github.io"
-	height="100%"
-	width="100%"
-	align="right"
-></iframe>
+	<iframe frameborder="0" theme="dark" scrolling="no" id="chat_embed" src="https://www.twitch.tv/embed/drkiller002/chat?darkpopout&parent=nitruseq.github.io" height="100%" width="100%" align="right"></iframe>
 </div>
 
-	<iframe id="twitch-embed"
-	src="https://player.twitch.tv/?channel=drkiller002&muted=true%22&parent=nitruseq.github.io"
-    height="100%"
-	width="100%"
-    frameborder="0"
-    scrolling="no"
-    allowfullscreen="yes">
-</iframe>
+<iframe id="twitch-embed" src="https://player.twitch.tv/?channel=drkiller002&muted=true%22&parent=nitruseq.github.io" height="100%" width="100%" frameborder="0" scrolling="no" allowfullscreen="yes"></iframe>
 
 <button id="zmiana" style="white-space: nowrap;display:none;font-family:Roobert" onclick="zmiana()">Zmiana filmu</button>
 
 <div id="text" height="17">
-      <p style="white-space: nowrap; color:#313134; font-family:Roobert; font-size:14px">
-         by <a style="color:#313134; text-decoration:none" href="https://www.twitch.tv/nitruseq" target="_blank"><b>nitruseq</b></a>
-      </p>
+	<p style="white-space: nowrap; color:#313134; font-family:Roobert; font-size:14px">by <a style="color:#313134; text-decoration:none" href="https://www.twitch.tv/nitruseq" target="_blank"><b>nitruseq</b></a></p>
 </div>
 
 <p id="ukryjstream" style="white-space: nowrap;display:none;color:white;font-family:Roobert;font-size:14px">Ukryj stream</p>
@@ -87,12 +36,9 @@ document.getElementById('filmframe').src = 'https://www.youtube.com/embed/' + id
 <p id="opcje" style="color:#808080;font-family:Roobert;font-size:14px">Opcje</p>
 
 <div id="tlo" style="display:none">
-<div id="textstrim" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">
-rozmiar strima
-</div>
-<div id="textczat" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">
-rozmiar czatu
-</div>
+	<div id="textstrim" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">rozmiar streama</div>
+	<div id="textczat" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">rozmiar czatu</div>
+	<div id="textgora" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">odległość filmu od góry</div>
 </div>
 
 <input type="checkbox" id="switch2" onclick="klik2()">
@@ -101,27 +47,13 @@ rozmiar czatu
 
 <input value="350" type="range" oninput="czat(this.value)" id="suwak2" min="0" max="700" step="1" style="display:none"/>
 
-<script>
-var w = window.innerWidth;
-w2 = w / 2;
-if (w2 <= 500) {
-document.getElementById('suwak2').max = "500";
-}
-if (w2 > 500) {
-document.getElementById('suwak2').max = w2;
-}
-</script>
+<input value="0" type="range" oninput="gora(this.value)" id="suwak3" min="0" max="300" step="1" style="display:none"/>
+
+<script src="ustawienie_wartosci_suwakow.js"></script>
 
 <input type="checkbox" id="switch" onclick="klik()" style="display:none">
 
-<script>        
-function displayWindowSize(){
-    czat(document.getElementById("suwak2").value);
-}
-window.addEventListener("resize", displayWindowSize);
-</script>
-
-
+<script src="wykrycie_zmiany_wielkosci_okna.js"></script>
 
 </body>
 
