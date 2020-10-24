@@ -103,28 +103,3 @@ function gora(value) {
 	wysokosc2 = wysokosc - value;
 	document.getElementById('filmframe').style.height = wysokosc2 + "px";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
