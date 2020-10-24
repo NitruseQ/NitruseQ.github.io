@@ -117,3 +117,26 @@
 	right:353px;
 	top: -15px;
 }
+
+.zaslaniacz {
+	position:fixed;
+	bottom: 0%;
+	left: 0%;
+	width: calc(100% - 350px);
+	height: 46px;
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+.film:hover + .zaslaniacz {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.zaslaniacz:hover {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 300ms, opacity 300ms;
+}

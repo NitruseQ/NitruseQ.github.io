@@ -20,6 +20,7 @@ document.getElementById('switch2').style.left = szerokosc4 + "px";
 document.getElementById('opcje').style.left = szerokosc6 + "px";
 document.getElementById('ukryjstream').style.left = szerokosc7 + "px";
 document.getElementById('zmiana').style.left = szerokosc8 + "px";
+document.getElementById('zaslaniacz').style.width = szerokosc2 + "px";
 }
 
 function klik() {
