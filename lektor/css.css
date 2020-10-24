@@ -15,6 +15,7 @@
 #filmframe {
 	position: fixed;
 	bottom: 0px;
+	width: calc(100% - 350px);
 }
 
 #zmiana {
