@@ -88,6 +88,12 @@
 	top: -1px;
 }
 
+#switch3 {
+	position: fixed;
+	right: 673px;
+	top: -1px;
+}
+
 #twitch-embed {
 	position:fixed;
 	width: 25%;
@@ -139,4 +145,10 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+#pasek {
+	position: fixed;
+	top: -15px; 
+	right: 691px;
 }

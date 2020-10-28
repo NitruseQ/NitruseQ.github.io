@@ -7,25 +7,23 @@
 
 <link rel="shortcut icon" type="image/png" href="icon.png">
 
-<title>DRKiller 😎</title> 
+<title>DRKiller 😎</title>
 
 <link rel="stylesheet" type="text/css" href="css.css">
-</head> 
+</head>
 
-<body style="background-color:#0e0e10">
-
-
+<body style="background-color:#000000">
 
 <div class="film" id="film">
 	<iframe src="" class="filmframe" id="filmframe" width="100%" height="100%" style="border:none;" scrolling="no" allowfullscreen="yes" name="v2" allow="encrypted-media"></iframe>
 </div>
 
-<div id="zaslaniacz" class="zaslaniacz" style="color:red;background-color:#000000;"></div>
-	
+<div id="zaslaniacz" class="zaslaniacz" style="background-color:#000000;"></div>
+
 <script src="ustawienie_filmu.js"></script>
 
 <div id="chat">
-	<iframe frameborder="0" theme="dark" scrolling="no" id="chat_embed" src="https://www.twitch.tv/embed/drkiller002/chat?darkpopout&parent=nitruseq.github.io" height="100%" width="100%" align="right"></iframe>
+	<iframe frameborder="0" theme="dark" scrolling="no" id="chat_embed" src="https://www.twitch.tv/embed/drkiller002/chat?darkpopout&parent=nitruseq.github.io" height="100%" width="100%"></iframe>
 </div>
 
 <iframe id="twitch-embed" src="https://player.twitch.tv/?channel=drkiller002&muted=false%22&parent=nitruseq.github.io" height="100%" width="100%" frameborder="0" scrolling="no" allowfullscreen="yes"></iframe>
@@ -38,6 +36,8 @@
 
 <p id="ukryjstream" style="white-space: nowrap;display:none;color:white;font-family:Roobert;font-size:14px">Ukryj stream</p>
 
+<p id="pasek" style="white-space: nowrap;display: none;color:white;font-family:Roobert;font-size:14px">Znikanie paska</p>
+
 <p id="opcje" style="color:#808080;font-family:Roobert;font-size:14px">Opcje</p>
 
 <div id="tlo" style="display:none">
@@ -46,7 +46,11 @@
 	<div id="textgora" width="100%" style="color:#ffffff;font-family:Roobert;font-size:14px;">odległość filmu od góry</div>
 </div>
 
+<input type="checkbox" id="switch" onclick="klik()" style="display:none">
+
 <input type="checkbox" id="switch2" onclick="klik2()">
+
+<input type="checkbox" id="switch3" onclick="klik3()" checked="true" style="display:none">
 
 <input value="25" type="range" oninput="rozmiar(this.value)" id="suwak" min="0" max="100" step="1" style="display:none"/>
 
@@ -56,7 +60,14 @@
 
 <script src="ustawienie_wartosci_suwakow.js"></script>
 
-<input type="checkbox" id="switch" onclick="klik()" style="display:none">
+<script>
+	 if (czy_yt == 1) {
+		 document.getElementById("zaslaniacz").style.display = 'none';
+	 }
+	 if (czy_yt == 0) {
+		 document.getElementById("zaslaniacz").style.display = 'block';
+	 }
+</script>
 
 <script src="wykrycie_zmiany_wielkosci_okna.js"></script>
 
