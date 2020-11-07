@@ -1,4 +1,4 @@
-liczba = Math.floor(Math.random() * 9);
+liczba = Math.floor(Math.random() * 10);
 if (liczba == 0) {
 	document.getElementById('tlo1').src = "png/1.gif";
 }
@@ -35,3 +35,6 @@ if (liczba == 8) {
 	document.getElementById('tlo1').src = "png/9.png";
 }
 
+if (liczba == 9) {
+	document.getElementById('tlo1').src = "png/10.gif";
+}
